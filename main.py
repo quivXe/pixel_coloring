@@ -6,7 +6,7 @@ import tkinter as tk
 
 
 # GLOBAL
-IMAGE_DICTIONARY = 'images/'
+IMAGE_DIRECTORY = 'images/'
 oryginal_image = None
 oryginal_with_frames = None
 TXT_LOADING1 = ('\nDownloading...', '\nFinished - 0%', '\n10%', '\n40%', '\n60%', '\n75%', '\n90%', '\n100%')
@@ -79,8 +79,8 @@ class IMG:
                   '!!!\n'
                   '!!!\n')
 
-            file_name = PATH[len(IMAGE_DICTIONARY):-4]
-            path_copy = IMAGE_DICTIONARY + file_name + 'CROPPED' + '.jpg'
+            file_name = PATH[len(IMAGE_DIRECTORY):-4]
+            path_copy = IMAGE_DIRECTORY + file_name + 'CROPPED' + '.jpg'
             while True:
                 imm = Image.open(PATH)
                 w, h = imm.size
@@ -564,14 +564,14 @@ if __name__ == '__main__':
           'colors amount- how many colors will have your photo (between 1-9)\n'
           'the bigger it is the more colorful and clearly image is\n\n'
           '-enter names of file with extension! (e.g smutnazaba.jpg), avaible extension: jpg, png\n\n'
-          '-store images in dictionary named "{}" placed in the same dictionary as this file!!!\n'
+          '-store images in directory named "{}" placed in the same directory as this file!!!\n'
           'if does not exist- just make it\n\n'
           '-do not forget about scrollbars, because sometimes you may be confused, you did not colored everything,'
           '\n when after scrolling you will have additional line\n\n'
           '-you can switch between coloring mode- coloring everything under cursor or coloring only when you right-clic'
           'k\n to switch- press space\n\n'
           '-you can choose a color -by pressing buttons on the screen -or by pressing 1-9 keys on keyboard\n'
-          '~~~'.format(IMAGE_DICTIONARY[:-1]))
+          '~~~'.format(IMAGE_DIRECTORY[:-1]))
 
     # sure u read
     input('If you read it carefully, press enter\n')
@@ -582,7 +582,7 @@ if __name__ == '__main__':
         print('Wrong extension')
         input('Press enter to quit\n')
         sys.exit()
-    PATH = IMAGE_DICTIONARY + image_name
+    PATH = IMAGE_DIRECTORY + image_name
 
     # pixel size
     try:
