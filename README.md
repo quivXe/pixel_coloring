@@ -7,3 +7,6 @@ My plans:
 - make full GUI instead of working in terminal
 - make game much prettier cuz it looks ugly
 - change resolution of canvas if image is small
+- add a zoom option
+
+Write if you have idea!
