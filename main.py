@@ -578,7 +578,7 @@ if __name__ == '__main__':
 
     # image name
     image_name = input('Image name (*.png or *.jpg): ')
-    if image_name[-4:] != '.jpg' or image_name[-4:] != '.png':
+    if image_name[-4:] != '.jpg' and image_name[-4:] != '.png':
         print('Wrong extension')
         input('Press enter to quit\n')
         sys.exit()
