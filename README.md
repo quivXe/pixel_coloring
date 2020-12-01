@@ -2,7 +2,7 @@
 Hey!
 Here you have a mini-game, where you can color pixel by pixel (with size you want) any picture you want.
 
-![alt text](https://github.com/quivXe/example_images/blob/main/example.png!raw=True)
+![alt text](https://github.com/quivXe/example_images/blob/main/example.png?raw=True)
 
 My plans:
 - remake all game and base on something else cuz this can makes computer cry
